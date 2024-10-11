@@ -1,0 +1,96 @@
+/* Reset Padding dan Margin */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #eff1f5;
+	color: #4c4f69;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 {
+	margin: 10px 0 30px;
+}
+
+.container {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	border-radius: 30px;
+}
+
+.deskripsi {
+	display: flex;
+	gap: 15px;
+	flex: 1;
+	align-items: center;
+	justify-content: center ;
+	border-radius: 35px;
+	margin: auto;
+	width: 80%;
+}
+.deskripsi p {
+	font-size: 19px;
+	text-align: justify;
+}
+
+img {
+	max-width: 200px;
+	height: auto;
+	border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.tableCont {
+	display: flex;
+	justify-content: center;
+	margin: 40px 0 0;
+	padding: 20px;
+}
+
+.tableKeterampilan {
+	border-collapse: collapse;
+	width: 80%;
+	background-color: #fbf1c7;
+	color: #282828;;
+}
+
+.tableKeterampilan th, .tableKeterampilan td {
+	border: 1px solid black;
+	padding: 5px;
+	text-align: left;
+}
+
+.tableKeterampilan th {
+	background-color: #d65d0e;
+}
+
+footer {
+	width: 100%;
+	position: ;
+	margin: 30px 0 0px;
+	text-align: center;
+}
+
+footer a {
+	color: #3c3836;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+@media (max-width: 768px) {
+	.deskripsi {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.tableKeterampilan {
+		width: 100%;
+	}
+}

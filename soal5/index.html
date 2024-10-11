@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Produk</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Tambahkan Produk</h1>
+    <div class="formContainer">
+        <input type="text" id="nama-produk" placeholder="Nama Produk" required>
+        <input type="text" id="kategori-produk" placeholder="Kategori Produk" required>
+        <input type="number" id="harga-produk" placeholder="Harga Produk" required>
+        <button onclick="addProduct()">Tambah Produk</button>
+    </div>
+    <hr>
+    <h1>Daftar Produk</h1>    
+    <table id="productTable">
+        <thead>
+            <tr>
+                <th>Nama Produk</th>
+                <th>Kategori Produk</th>
+                <th>Harga Produk</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Baris produk yang akan diisi oleh script -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

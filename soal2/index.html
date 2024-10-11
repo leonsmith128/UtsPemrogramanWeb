@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Registrasi Pengguna</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulir Registrasi Pengguna</h1>
+        <form id="registrationForm">
+            <!-- Nama Lengkap -->
+            <div class="formGroup">
+                <label for="namaLengkap">Nama Lengkap:</label>
+                <input class="inputbox" type="text" id="namaLengkap" name="namaLengkap" required>
+            </div>
+            <!-- Email -->
+            <div class="formGroup">
+                <label for="email">Email:</label>
+                <input class="inputbox" type="email" id="email" name="email" required>
+            </div>
+            <!-- Kata Sandi -->
+            <div class="formGroup">
+                <label for="password">Kata Sandi:</label>
+                <input class="inputbox" type="password" id="password" name="password" required>
+            </div>
+            <!-- Konfirmasi Kata Sandi -->
+            <div class="formGroup">
+                <label for="confirm-password">Konfirmasi Kata Sandi:</label>
+                <input class="inputbox" type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <!-- Jenis Kelamin -->
+            <div class="formGroup">
+                <label for="gender">Jenis Kelamin:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Pilih Jenis Kelamin</option>
+                    <option value="male">Laki-Laki</option>
+                    <option value="female">Perempuan</option>
+                </select>
+            </div>
+            <!-- Syarat dan Ketentuan -->
+            <div class="formGroup">
+                <label>
+                    <input class="snk" type="checkbox" id="snk" required> Saya menyetujui Syarat dan Ketentuan
+                </label>
+            </div>
+            <!-- Tombol Kirim -->
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
